@@ -170,7 +170,6 @@
 }
 
 .sidebar{
-	margin-left: 0;
     position: fixed;
     top: 9%;
     left: 0%;
@@ -190,6 +189,8 @@
 }
 
 .sidebar ul li{
+	display: flex;
+	align-items: center;
 	width: 100%;
 	color: black;
 	margin-bottom: 1px;
@@ -877,9 +878,9 @@
 
 @media screen and (min-width:1024px){
 
-#main .sidebar span i{
+/*#main .sidebar span i{
     display: none;
-}
+}*/
 
 .sidenav {
 	display: none;
