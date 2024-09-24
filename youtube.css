@@ -398,6 +398,78 @@
 	display: none;
 }
 
+.sidebar{
+   display: none;
+}
+/**/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #4f4c4c;
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+
+.sidenav a{
+  text-decoration: none;
+  color: white;
+}
+
+.sidenav .mobnev{
+  display: flex;
+  align-items: center;
+   margin-top: 20px;
+   padding: 15px 16px;
+   cursor: pointer;
+}
+
+.sidenav .mobnev a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.sidenav .mobnev a i{
+  color: red;
+  font-size: 25px;
+}
+
+.sidenav ul{
+  list-style: none;
+}
+
+.sidenav ul li{
+  width: 100%;
+  padding: 10px 0;
+  margin-left: -15px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.sidenav ul li a{
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.sidenav hr{
+  margin: 8px 0;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  font-size: 30px
+}
+
+/**/
 #mobnev{
 	width: 100%;
 	position: fixed;
@@ -410,31 +482,33 @@
 	background-color: #FFFFFF;
 }
 
-#mobnev .mobnev1{
+#mobnev .mobnev1 a i{
+	font-size: 20px;
+	color: black;
+}
+
+#mobnev .mobnev2{
 	display: flex;
 	align-items: center;
 }
 
-#mobnev .mobnev1 a{
+#mobnev .mobnev2 a{
 	text-decoration: none;
 	color: black;
 	font-size: 19px;
 	font-weight: bold;
 }
 
-#mobnev .mobnev1 a i{
+#mobnev .mobnev2 a i{
 	text-decoration: none;
 	color: red;
 	font-size: 28px;
 	font-weight: bold;
 }
 
-#mobnev .mobnev2 a i{
+#mobnev .mobnev3 a i{
 	font-size: 20px;
-}
-
-.sidebar{
-	display: none;
+	color: black;
 }
 
 #content .topbar ul li{
@@ -516,6 +590,76 @@
 	display: none;
 }
 
+/**/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #4f4c4c;
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+
+.sidenav a{
+  text-decoration: none;
+  color: white;
+}
+
+.sidenav .mobnev{
+  display: flex;
+  align-items: center;
+   margin-top: 20px;
+   padding: 15px 16px;
+   cursor: pointer;
+}
+
+.sidenav .mobnev a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.sidenav .mobnev a i{
+  color: red;
+  font-size: 25px;
+}
+
+.sidenav ul{
+  list-style: none;
+}
+
+.sidenav ul li{
+  width: 100%;
+  padding: 10px 0;
+  margin-left: -15px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.sidenav ul li a{
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.sidenav hr{
+  margin: 8px 0;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  font-size: 30px
+}
+
+/**/
+
 #mobnev{
 	width: 100%;
 	position: fixed;
@@ -523,32 +667,37 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 15px 15px;
+	padding: 15px 20px;
 	z-index: 2;
 	background-color: #FFFFFF;
 }
 
-#mobnev .mobnev1{
+#mobnev .mobnev1 a i{
+	font-size: 22px;
+	color: black;
+}
+
+#mobnev .mobnev2{
 	display: flex;
 	align-items: center;
 }
 
-#mobnev .mobnev1 a{
+#mobnev .mobnev2 a{
 	text-decoration: none;
 	color: black;
 	font-size: 19px;
 	font-weight: bold;
 }
 
-#mobnev .mobnev1 a i{
+#mobnev .mobnev2 a i{
 	text-decoration: none;
 	color: red;
 	font-size: 28px;
 	font-weight: bold;
 }
 
-#mobnev .mobnev2 a i{
-	font-size: 20px;
+#mobnev .mobnev3 a i{
+	font-size: 22px;
 }
 
 #content{
@@ -571,7 +720,10 @@
 #nev .nevP1 .fa-bars{
 	font-size: 18px;
 	padding-left: 15px;
+}
 
+.sidenav {
+	display: none;
 }
 
 #nev .nevP1 .fa-youtube{
@@ -656,6 +808,10 @@
     float: left;
 }
 
+#main .sidebar span i{
+    display: none;
+}
+
 .sidebar ul{
 	margin: 0px;
 }
@@ -717,5 +873,15 @@
 	width: 48%;
 	height: 320px;
 }
+}
 
+@media screen and (min-width:1024px){
+
+#main .sidebar span i{
+    display: none;
+}
+
+.sidenav {
+	display: none;
+}
 }
