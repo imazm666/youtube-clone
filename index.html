@@ -14,17 +14,77 @@
 		<!-- Main NavBar For Mobile -->
 
 		<div id="mobnev">
+
 			<div class="mobnev1">
+				<a href="#"><i class="fa-solid fa-bars" onclick="openNav()"></i></a>
+			</div>
+
+			<div class="mobnev2">
 		 		<a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
 		 		<a href="https://www.youtube.com/" target="_blank">&nbspYouTube</a>
 		 	</div>
 
-		 	<div class="mobnev2">
+		 	<div class="mobnev3">
 		 		<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
 		 	</div>
 		 </div>
 
+		 <!-- Mobile navbar 2 -->
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <div class="mobnev">
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.youtube.com/" target="_blank">&nbspYouTube</a>
+      </div>
+
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <a href="#" target="_parent">Trending</a> 
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                    <a href="#" target="_parent">Music</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-film"></i></a>
+                    <a href="#" target="_parent">Gaming</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-film"></i></a>
+                    <a href="#" target="_parent">News</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <a href="#" target="_parent">Sports</a> 
+                </li>
+            </ul>
+
+            <hr>
+
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <a href="#" target="_parent">Youtube Premium</a> 
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                    <a href="#" target="_parent">Youtube Studio</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-film"></i></a>
+                    <a href="#" target="_parent">Youtube Music</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-film"></i></a>
+                    <a href="#" target="_parent">Youtube Kids</a>
+                </li>
+            </ul>
+
+
+</div>
 		<!-- main Navbar fir desktop -->
 
 		 <div id="nev">
@@ -60,6 +120,7 @@
 
 	<div id="main"> 
 		<div class="sidebar">
+			<span><i onclick="closeNav()" class="fa-solid fa-xmark"></i></span>
             <ul>
                 <li>
                     <a href="https://www.youtube.com/"><i class="fa-solid fa-house"></i></a>
@@ -437,7 +498,15 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src="yoube.js"></script>
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 
 </body>
 </html>
